@@ -1,8 +1,8 @@
-# bpmn-viewer
+# @dragon-x/bpmn-viewer
 
-[![npm version](https://img.shields.io/npm/v/bpmn-viewer)](https://www.npmjs.com/package/bpmn-viewer)
-[![npm downloads](https://img.shields.io/npm/dm/bpmn-viewer)](https://www.npmjs.com/package/bpmn-viewer)
-[![license](https://img.shields.io/npm/l/bpmn-viewer)](LICENSE)
+[![npm version](https://img.shields.io/npm/v/@dragon-x/bpmn-viewer)](https://www.npmjs.com/package/@dragon-x/bpmn-viewer)
+[![npm downloads](https://img.shields.io/npm/dm/@dragon-x/bpmn-viewer)](https://www.npmjs.com/package/@dragon-x/bpmn-viewer)
+[![license](https://img.shields.io/npm/l/@dragon-x/bpmn-viewer)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/xietongjian/bpmn-viewer)](https://github.com/xietongjian/bpmn-viewer)
 
 A Vue 3 BPMN diagram viewer component with preset viewer and token simulation support.
@@ -20,11 +20,11 @@ A Vue 3 BPMN diagram viewer component with preset viewer and token simulation su
 ## 📦 Installation
 
 ```bash
-npm install bpmn-viewer
+npm install @dragon-x/bpmn-viewer
 # or
-pnpm add bpmn-viewer
+pnpm add @dragon-x/bpmn-viewer
 # or
-yarn add bpmn-viewer
+yarn add @dragon-x/bpmn-viewer
 ```
 
 ## 🚀 Quick Start
@@ -42,8 +42,8 @@ yarn add bpmn-viewer
 </template>
 
 <script setup>
-import { BpmnViewer } from 'bpmn-viewer';
-import 'bpmn-viewer/lib/bpmn-viewer.css';
+import { BpmnViewer } from '@dragon-x/bpmn-viewer';
+import '@dragon-x/bpmn-viewer/lib/bpmn-viewer.css';
 
 const xmlStr = `<?xml version="1.0" encoding="UTF-8"?>
 <definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" ...>
