@@ -1,0 +1,88 @@
+{
+  "name": "@dragon/bpmn-viewer",
+  "version": "1.0.0",
+  "description": "A Vue 3 BPMN diagram viewer component with preset viewer and token simulation.",
+  "keywords": [
+    "bpmn",
+    "bpmn-js",
+    "bpmn-viewer",
+    "bpmn diagram",
+    "workflow",
+    "process",
+    "vue",
+    "vue3",
+    "vue-component",
+    "flowable",
+    "flowable-designer",
+    "process-viewer",
+    "token-simulation"
+  ],
+  "homepage": "https://github.com/xietongjian/bpmn-viewer#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xietongjian/bpmn-viewer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xietongjian/bpmn-viewer/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "xietongjian",
+    "url": "https://github.com/xietongjian"
+  },
+  "type": "module",
+  "main": "lib/bpmn-viewer.cjs",
+  "module": "lib/bpmn-viewer.js",
+  "unpkg": "lib/bpmn-viewer.js",
+  "types": "lib/bpmn-viewer.d.ts",
+  "style": "lib/bpmn-viewer.css",
+  "exports": {
+    ".": {
+      "import": "./lib/bpmn-viewer.js",
+      "require": "./lib/bpmn-viewer.cjs",
+      "types": "./lib/bpmn-viewer.d.ts"
+    },
+    "./lib/bpmn-viewer.css": "./lib/bpmn-viewer.css"
+  },
+  "files": [
+    "lib"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "scripts": {
+    "dev": "vite --force --open --host",
+    "build": "vite build --mode demo",
+    "build:lib": "vite build --mode lib",
+    "build:compo": "vite build --config vite.lib.config.ts --mode compo",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "prepublishOnly": "pnpm build:compo"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.0",
+    "vue-i18n": "^9.0.0",
+    "bpmn-js": "^18.0.0",
+    "bpmn-js-i18n-zh": "^1.0.0",
+    "diagram-js-grid-bg": "^1.0.0"
+  },
+  "peerDependenciesMeta": {
+    "vue-i18n": {
+      "optional": true
+    },
+    "bpmn-js-i18n-zh": {
+      "optional": true
+    },
+    "diagram-js-grid-bg": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=16",
+    "pnpm": ">=8"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
