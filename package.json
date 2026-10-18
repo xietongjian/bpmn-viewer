@@ -1,6 +1,6 @@
 {
   "name": "@dragon-x/bpmn-viewer",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A Vue 3 BPMN diagram viewer component with preset viewer and token simulation.",
   "keywords": [
     "bpmn",
@@ -60,11 +60,11 @@
     "prepublishOnly": "pnpm build:compo"
   },
   "peerDependencies": {
-    "vue": "^3.2.0",
-    "vue-i18n": "^9.0.0",
     "bpmn-js": "^18.0.0",
     "bpmn-js-i18n-zh": "^1.0.0",
-    "diagram-js-grid-bg": "^1.0.0"
+    "diagram-js-grid-bg": "^1.0.0",
+    "vue": "^3.2.0",
+    "vue-i18n": "^9.0.0"
   },
   "peerDependenciesMeta": {
     "vue-i18n": {
