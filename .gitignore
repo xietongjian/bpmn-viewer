@@ -148,5 +148,11 @@ vite.config.ts.timestamp-*
 # Turbo Repo
 .turbo
 
+# Editor directories and files
+.idea/
+.vscode/
+*.swp
+*.swo
+
 # 发布说明文档
 publish.md
