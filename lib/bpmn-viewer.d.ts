@@ -1,10 +1,11 @@
+import { ArcoTheme } from '../../../../shared/utils/arco-theme/src';
 import { ComponentOptionsMixin } from 'vue';
 import { ComponentProvideOptions } from 'vue';
 import { DefineComponent } from 'vue';
 import { ExtractPropTypes as ExtractPropTypes_2 } from 'vue';
 import { PropType as PropType_2 } from 'vue';
 import { PublicProps } from 'vue';
-import { SimulationPathResult } from '@flowable-designer/shared/custom-modules/simple-token-simulation/simulator/Simulator';
+import { SimulationPathResult } from '../../../../shared/custom-modules/simple-token-simulation/simulator/Simulator/src';
 import { default as TippyPopover } from './common/TippyPopover.vue';
 
 export declare const BpmnMocker: DefineComponent<ExtractPropTypes_2<    {
@@ -30,7 +31,7 @@ setSequenceFlows: (flows: string[]) => void;
 setTaskUserInfos: (userInfos: Record<"id", string[]>) => void;
 getSimulationPath: () => Promise<SimulationPathResult>;
 toggleLang: (lang?: "zh_CN" | "en_US") => void;
-toggleTheme: (theme?: "dark" | "light") => void;
+toggleTheme: (theme?: "dark" | "light") => ArcoTheme;
 resetViewport: () => void;
 playMock: () => void;
 pauseMock: () => void;
@@ -211,12 +212,13 @@ setPassedNodes: (nodeIds: string[]) => void;
 setFutureNodes: (nodeIds: string[]) => void;
 setActiveNodes: (nodeIds: string[]) => void;
 setProcessingMarker: (nodeIds: string[]) => void;
-isPassedNode: (node: string | BpmnElement) => any;
-isActiveNode: (node: string | BpmnElement) => any;
-isProcessingNode: (node: string | BpmnElement) => any;
+resetViewerMarkers: () => void;
+isPassedNode: (node: string | BpmnElement) => boolean;
+isActiveNode: (node: string | BpmnElement) => boolean;
+isProcessingNode: (node: string | BpmnElement) => boolean;
 getModeler: () => any;
 toggleLang: (lang?: "zh_CN" | "en_US") => void;
-toggleTheme: (theme?: "dark" | "light") => void;
+toggleTheme: (theme?: "dark" | "light") => ArcoTheme | undefined;
 downloadProcess: (type?: "xml" | "bpmn" | "svg" | "png", fName?: string) => Promise<void>;
 downloadProcessAsPng: (name: any) => Promise<void>;
 }, {}, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {
