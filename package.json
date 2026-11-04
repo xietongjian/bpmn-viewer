@@ -1,6 +1,6 @@
 {
   "name": "@dragon-x/bpmn-viewer",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A Vue 3 BPMN diagram viewer component with preset viewer and token simulation.",
   "keywords": [
     "bpmn",
